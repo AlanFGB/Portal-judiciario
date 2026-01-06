@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Consultas - Extremo Oeste SC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header -->
+    <nav class="bg-emerald-900 text-white p-6 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold flex items-center gap-3">
+                <i class="fas fa-gavel text-emerald-400"></i>
+                Portal Judiciário: Extremo Oeste SC
+            </h1>
+            <p class="text-emerald-200 text-sm mt-1">Consulta de Sentenças e Regimes de Reclusão</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-10 px-4">
+        
+        <div class="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <h2 class="text-xl font-semibold">Casos Recentes em Julgamento</h2>
+                <p class="text-slate-500 text-sm">Comarcas de São Miguel do Oeste, Dionísio Cerqueira e Itapiranga.</p>
+            </div>
+            <div class="bg-white border border-slate-200 px-4 py-2 rounded-lg text-sm font-medium text-slate-600">
+                <i class="fas fa-calendar-alt mr-2"></i> Atualizado em: Jan 2026
+            </div>
+        </div>
+
+        <!-- Tabela de Casos -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 border-b border-slate-200">
+                            <th class="p-4 font-bold text-slate-700">Envolvido</th>
+                            <th class="p-4 font-bold text-slate-700">Acusação (MP)</th>
+                            <th class="p-4 font-bold text-slate-700">Defesa Técnica</th>
+                            <th class="p-4 font-bold text-slate-700 text-center">Pena / Regime</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <!-- Exemplo 1 -->
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="p-4">
+                                <span class="font-semibold text-blue-700 block">João A. Silva (Exemplo)</span>
+                                <span class="text-xs text-slate-400 uppercase">Dionísio Cerqueira</span>
+                            </td>
+                            <td class="p-4 text-sm leading-relaxed">
+                                Tráfico transfronteiriço de entorpecentes e associação criminosa.
+                            </td>
+                            <td class="p-4 text-sm leading-relaxed italic text-slate-600">
+                                Alegou nulidade na busca e apreensão e cooperação por coação.
+                            </td>
+                            <td class="p-4 text-center">
+                                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold block mb-1">FECHADO</span>
+                                <span class="text-sm font-bold">12 Anos e 4 Meses</span>
+                            </td>
+                        </tr>
+
+                        <!-- Exemplo 2 -->
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="p-4">
+                                <span class="font-semibold text-blue-700 block">Marcos R. Santos (Exemplo)</span>
+                                <span class="text-xs text-slate-400 uppercase">São Miguel do Oeste</span>
+                            </td>
+                            <td class="p-4 text-sm leading-relaxed">
+                                Homicídio qualificado por motivo fútil em via pública.
+                            </td>
+                            <td class="p-4 text-sm leading-relaxed italic text-slate-600">
+                                Sustentou legítima defesa putativa e ausência de dolo.
+                            </td>
+                            <td class="p-4 text-center">
+                                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold block mb-1">FECHADO</span>
+                                <span class="text-sm font-bold">18 Anos</span>
+                            </td>
+                        </tr>
+
+                        <!-- Exemplo 3 -->
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="p-4">
+                                <span class="font-semibold text-blue-700 block">Carlos E. Oliveira (Exemplo)</span>
+                                <span class="text-xs text-slate-400 uppercase">Itapiranga</span>
+                            </td>
+                            <td class="p-4 text-sm leading-relaxed">
+                                Descaminho qualificado e facilitação de contrabando.
+                            </td>
+                            <td class="p-4 text-sm leading-relaxed italic text-slate-600">
+                                Buscou a desclassificação do crime e reconhecimento de bons antecedentes.
+                            </td>
+                            <td class="p-4 text-center">
+                                <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold block mb-1">FECHADO</span>
+                                <span class="text-sm font-bold">9 Anos</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Nota de Esclarecimento -->
+        <div class="mt-8 bg-amber-50 border border-amber-200 p-4 rounded-lg flex gap-4">
+            <i class="fas fa-exclamation-triangle text-amber-500 mt-1"></i>
+            <div>
+                <h4 class="text-amber-800 font-bold text-sm">Informação Importante</h4>
+                <p class="text-amber-700 text-xs mt-1">
+                    Os nomes citados nesta tabela são meramente ilustrativos para fins de demonstração da interface. 
+                    As sentenças em <strong>Regime Fechado</strong> implicam em reclusão total inicial, sem direito a saídas no período estipulado pelo juiz, 
+                    conforme a Lei de Execução Penal.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-10 text-slate-400 text-xs">
+        &copy; 2026 Sistema de Informação Judiciária - Região Extremo Oeste SC
+    </footer>
+
+</body>
+</html>
